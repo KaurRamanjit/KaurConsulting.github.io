@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Industries</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+<header>
+    <!-- reuse same header/nav -->
+</header>
 
+<main>
+    <h2>Industries</h2>
+
+    <section>
+        <article>
+            <h3>Consumer Goods</h3>
+            <p>Market trends, brand positioning, and consumer behavior insights.</p>
+        </article>
+
+        <article>
+            <h3>Technology</h3>
+            <p>Competitive analysis, innovation tracking, and growth opportunities.</p>
+        </article>
+
+        <article>
+            <h3>Finance</h3>
+            <p>Macroeconomic insights and strategic forecasting.</p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Kaur Consulting</p>
+</footer>
+</body>
+</html>

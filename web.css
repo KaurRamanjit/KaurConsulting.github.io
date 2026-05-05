@@ -93,3 +93,45 @@ p{
         margin-top: 30px;
         font-size: 18px;
     }
+    .menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    display: block;
+}
+
+/* Hide dropdown initially */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f0f0;
+}

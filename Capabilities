@@ -1,1 +1,20 @@
+<main>
+    <h2>Capabilities</h2>
 
+    <section>
+        <article>
+            <h3>Data Analysis</h3>
+            <p>Advanced analytics using quantitative and qualitative methods.</p>
+        </article>
+
+        <article>
+            <h3>Strategic Consulting</h3>
+            <p>Actionable recommendations tailored to business goals.</p>
+        </article>
+
+        <article>
+            <h3>Visualization Tools</h3>
+            <p>Dashboards and storytelling techniques for decision-making.</p>
+        </article>
+    </section>
+</main>

@@ -93,5 +93,13 @@ p{
         margin-top: 30px;
         font-size: 18px;
     }
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+}
 
+.dropdown:hover .dropdown-menu {
+    display: block;
 }

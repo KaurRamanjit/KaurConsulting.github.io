@@ -1,5 +1,5 @@
 body {
-    background-color: #fafafa;
+    background-color: white;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     color: #333;
@@ -12,25 +12,46 @@ header, main, footer {
     padding: 0 20px;
 }
 
-/* Header Styles - LOGO FIXED */
+/* Header Styles - FIXED BACKGROUND MATCH */
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px 0;
     border-bottom: 3px solid #2c3e50;
+    background-color: white; /* Matches page background */
 }
 
 .logo-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 15px;
+    background-color: white; /* Matches page background */
 }
 
 .logo {
-    max-width: 300px;
-    height: auto;
-    width: 100%;
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.logo-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Alternative if you want gradient text */
+.logo-text-gradient {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
 }
 
 /* ===== NAVIGATION MENU ===== */
@@ -69,13 +90,13 @@ nav {
     background-color: #34495e;
 }
 
-/* ===== DROPDOWN STYLES - 100% VISIBLE FIX ===== */
+/* ===== DROPDOWN STYLES - COMPLETELY VISIBLE ===== */
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff;
+    background-color: white;
     list-style: none;
     padding: 8px 0;
     margin: 0;
@@ -94,8 +115,8 @@ nav {
 .dropdown-menu li a {
     display: block;
     padding: 12px 20px;
-    color: #1a252f !important;
-    background-color: #ffffff;
+    color: #2c3e50 !important;
+    background-color: white;
     font-weight: 500 !important;
     font-size: 14px;
     letter-spacing: normal;
@@ -113,12 +134,11 @@ nav {
     padding-left: 25px;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/* Add a small arrow indicator for dropdown */
+/* Add dropdown arrow */
 .dropdown > a:after {
     content: " ▼";
     font-size: 10px;
@@ -198,7 +218,6 @@ nav {
     text-align: center;
 }
 
-/* CTA Button */
 .cta-button {
     margin-top: 30px;
 }
@@ -286,76 +305,77 @@ footer p {
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
-
-    .logo {
-        max-width: 200px;
+    
+    .logo-container {
+        justify-content: center;
     }
-
+    
+    .logo {
+        height: 50px;
+    }
+    
+    .logo-text {
+        font-size: 1.3em;
+    }
+    
     .menu {
         flex-direction: column;
         align-items: center;
         gap: 0;
     }
-
+    
     .menu li {
         width: 100%;
         text-align: center;
     }
-
+    
     .menu li a {
         display: block;
         width: 100%;
         padding: 12px;
     }
-
+    
     .dropdown-menu {
         position: static;
         box-shadow: none;
         background-color: #34495e;
         border: none;
-        padding: 0;
     }
-
+    
     .dropdown-menu li a {
         color: white !important;
         background-color: #34495e;
         text-align: center;
         border-bottom: 1px solid #3d566e;
     }
-
+    
     .dropdown-menu li a:hover {
         background-color: #3d566e;
         color: white !important;
         padding-left: 20px;
-        text-align: center;
     }
-
+    
     .hero h1 {
         font-size: 28px;
     }
-
+    
     .hero p {
         font-size: 16px;
     }
-
+    
     .about-content {
         flex-direction: column;
         padding: 25px;
     }
-
+    
     .services-grid {
         flex-direction: column;
     }
-
-    h2 {
-        font-size: 28px;
-    }
 }
 
-/* For Services page specific styles */
+/* Services page specific */
 .subpages {
     display: flex;
     gap: 2rem;

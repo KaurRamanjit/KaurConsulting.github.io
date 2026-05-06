@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Kaur Consulting | Market Research & Data Insights</title>
+    <!-- Link to external CSS file (web.css) -->
     <link rel="stylesheet" href="web.css">
+    <style>
+        /* minimal fallback or override — but main styles are now in web.css 
+           this ensures boxes are visible even before external loads, but we rely on web.css */
+    </style>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="logo-container">
-                <!-- Your logo image -->
-                <img src="kaur-logo.png" alt="Kaur Consulting Logo" class="logo">
-                <!-- Text next to logo -->
+                <!-- Your logo image (update path if needed) -->
+                <img src="kaur-logo.png" alt="Kaur Consulting Logo" class="logo" onerror="this.style.display='none'">
                 <span class="logo-text">Kaur Consulting</span>
             </div>
         </div>
@@ -39,6 +43,7 @@
             <p>Market research & competitive analysis tailored to your business needs</p>
         </section>
 
+        <!-- ABOUT section — clean unified box -->
         <section class="about-section">
             <h2>ABOUT</h2>
             <div class="about-content">
@@ -54,11 +59,12 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Market Research" style="width: 100%; max-width: 300px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Market Research illustration" style="width: 100%; max-width: 240px;">
                 </div>
             </div>
         </section>
 
+        <!-- WHAT I OFFER: three clean box cards (organized with boxes) -->
         <section class="services-preview">
             <h2>What I Offer</h2>
             <div class="services-grid">
@@ -80,7 +86,7 @@
 
     <footer>
         <p>© 2025 Kaur Consulting. All rights reserved.</p>
-        <p style="font-size: 12px; margin-top: 10px;">Based in France | Serving clients worldwide</p>
+        <p style="font-size: 12px; margin-top: 8px;">Based in France | Serving clients worldwide</p>
     </footer>
 </body>
 </html>

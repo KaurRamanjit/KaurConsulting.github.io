@@ -110,28 +110,73 @@ p{
     display: block;
 }
 
-/* Hide dropdown initially */
+/* Style the main menu to be horizontal */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+/* Style each menu item */
+.menu li {
+    position: relative; /* Needed to position the dropdown absolutely */
+}
+
+/* Style the links */
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+
+/* --- DROPDOWN SPECIFIC STYLES --- */
+
+/* Hide the dropdown menu by default */
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100%;      /* Positions right below the parent "SERVICES" */
     left: 0;
-    background: white;
+    background-color: white;
     list-style: none;
     padding: 0;
+    margin: 0;
     min-width: 180px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
 }
 
-/* Show dropdown on hover */
+/* Style the dropdown links */
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #333;
+    font-weight: normal;
+    border-bottom: 1px solid #eee;
+}
+
+/* Remove border from last item */
+.dropdown-menu li:last-child a {
+    border-bottom: none;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- THE IMPORTANT PART: Show dropdown on hover --- */
 .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-.dropdown-menu li a {
-    padding: 10px;
-}
-
-.dropdown-menu li a:hover {
-    background: #f0f0f0;
 }

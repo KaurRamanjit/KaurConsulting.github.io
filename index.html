@@ -3,39 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaur Consulting</title>
+    <title>Kaur Consulting | Market Research & Data Insights</title>
     <link rel="stylesheet" href="web.css">
 </head>
-<body class="About">
-   <header>
-    <div class="header">
-        <h1> <img src="https://images.vexels.com/media/users/3/136276/isolated/lists/31d41117ba74dd2475728b29db3ef718-laptop-flat-icon.png" alt="website logo" class="logo"/> </h1>
-        <h1 class ="title"> Kaur Consulting</h1>
-   </div>
+<body>
+    <header>
+        <div class="header">
+            <img src="https://images.vexels.com/media/users/3/136276/isolated/lists/31d41117ba74dd2475728b29db3ef718-laptop-flat-icon.png" alt="website logo" class="logo"/>
+            <h1 class="title">Kaur Consulting</h1>
+        </div>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">ABOUT</a></li>
-                <li><a href="Services.html">SERVICES</a></li>
+                <li class="dropdown">
+                    <a href="Services.html">SERVICES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="capabilities.html">Capabilities</a></li>
+                    </ul>
+                </li>
                 <li><a href="Insights.html">INSIGHTS</a></li>
                 <li><a href="Business Cases.html">BUSINESS CASES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
             </ul>
         </nav>
-        </header>
-        <main>
-            <section>
-    <h2>ABOUT</h2>
-    <p>Welcome to <strong>Kaur Consulting.</strong> I'm <strong>Ramanjit Kaur</strong>, an auto-entrepreneur based in France specializing in <strong>market research reports and data-driven insights</strong>.</p>
+    </header>
 
-    <p>I help businesses understand their markets through comprehensive research, competitive analysis, and clear data storytelling. Whether you need market sizing, competitor benchmarks, or consumer behavior analysis, I provide tailored reports that support your strategic decisions.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Data-Driven Insights for Strategic Decisions</h1>
+            <p>Market research & competitive analysis tailored to your business needs</p>
+        </section>
 
-    <p>My approach combines rigorous methodology with practical business applications — delivering insights that are both accurate and actionable. Based in France and serving clients remotely, I'm here to help you navigate your market with confidence.</p>
-</section>
-        </main>
-        <footer>
-            <p>© 2025 Kaur Consulting. All rights reserved.</p>
-        </footer>
-    </body>
-    </html>
-    
-        
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>ABOUT</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Kaur Consulting. I'm <strong>Ramanjit Kaur</strong>, an auto-entrepreneur based in France specializing in market research reports and data-driven insights.</p>
+                    
+                    <p>I help businesses understand their markets through comprehensive research, competitive analysis, and clear data storytelling. Whether you need market sizing, competitor benchmarks, or consumer behavior analysis, I provide tailored reports that support your strategic decisions.</p>
+                    
+                    <p>My approach combines rigorous methodology with practical business applications — delivering insights that are both accurate and actionable. Based in France and serving clients remotely, I'm here to help you navigate your market with confidence.</p>
+                    
+                    <div class="cta-button">
+                        <a href="Services.html">Explore My Services →</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Market Research" style="width: 100%; max-width: 300px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Services Preview -->
+        <section class="services-preview">
+            <h2>What I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📊 Market Research</h3>
+                    <p>Comprehensive market sizing, trend analysis, and opportunity identification.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎯 Competitive Analysis</h3>
+                    <p>Deep dive into competitor strategies, positioning, and market share.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📈 Data Storytelling</h3>
+                    <p>Clear, actionable insights presented through compelling narratives and visuals.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Kaur Consulting. All rights reserved.</p>
+        <p style="font-size: 12px; margin-top: 10px;">Based in France | Serving clients worldwide</p>
+    </footer>
+</body>
+</html>

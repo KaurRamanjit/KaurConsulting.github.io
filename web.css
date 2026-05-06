@@ -1,4 +1,4 @@
-body{
+body {
     background-color: white;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -13,90 +13,34 @@ header, main, footer {
 
 .header {
     display: flex;
-    align-items: center; /* Align image and text vertically */
-    gap: 20px; /* Adjust spacing between the logo and text */
-  }
-  
-  .logo {
-    height: 50px; /* Adjust as needed */
-    width: auto; /* Maintain aspect ratio */
-  }
-  
-  .title {
-    font-size: 2em; /* Adjust text size */
-    font-weight: bold;
-  }
+    align-items: center;
+    gap: 20px;
+}
 
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* ===== NAVIGATION MENU - FIXED VERSION ===== */
 nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Make the list items appear in a row */
-    gap: 30px; /* Add spacing between items */
-    font-size: 12px;
-}
-
-nav ul li {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: grey;
-    font-weight: bold;
-    padding: 0;
-}
-h2{
-    font-size: 20px;
-    margin-top: 50px;
-    line-height: 1.5;
-    color: black;
-
-}
-p{
-    line-height: 1.5;
-}
-
-.service-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.service-link:hover .service {
-    transform: translateY(-5px);
-    transition: 0.3s;
-}
-
-/* MOBILE VERSION */
-@media (max-width: 768px) {
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    h2 {
-        margin-top: 30px;
-        font-size: 18px;
-    }
-    .menu {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
     display: flex;
-    gap: 40px;
+    gap: 2rem;
+    background-color: #f8f9fa;
 }
 
 .menu li {
@@ -105,43 +49,17 @@ p{
 
 .menu a {
     text-decoration: none;
-    color: #555;
-    padding: 10px;
-    display: block;
-}
-
-/* Style the main menu to be horizontal */
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 2rem;
-    background-color: #f8f9fa;
-    padding: 1rem;
-}
-
-/* Style each menu item */
-.menu li {
-    position: relative; /* Needed to position the dropdown absolutely */
-}
-
-/* Style the links */
-.menu a {
-    text-decoration: none;
     color: #333;
     font-weight: bold;
     padding: 0.5rem 0;
     display: inline-block;
 }
 
-/* --- DROPDOWN SPECIFIC STYLES --- */
-
-/* Hide the dropdown menu by default */
+/* ===== DROPDOWN STYLES ===== */
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;      /* Positions right below the parent "SERVICES" */
+    top: 100%;
     left: 0;
     background-color: white;
     list-style: none;
@@ -153,7 +71,6 @@ p{
     z-index: 100;
 }
 
-/* Style the dropdown links */
 .dropdown-menu li {
     margin: 0;
 }
@@ -164,19 +81,89 @@ p{
     color: #333;
     font-weight: normal;
     border-bottom: 1px solid #eee;
+    white-space: nowrap;
 }
 
-/* Remove border from last item */
 .dropdown-menu li:last-child a {
     border-bottom: none;
 }
 
-/* Hover effect for dropdown items */
 .dropdown-menu a:hover {
     background-color: #f0f0f0;
 }
 
-/* --- THE IMPORTANT PART: Show dropdown on hover --- */
+/* THIS MAKES THE DROPDOWN WORK */
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/* ===== OTHER STYLES ===== */
+h2 {
+    font-size: 20px;
+    margin-top: 50px;
+    line-height: 1.5;
+    color: black;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.subpages {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.service {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.service-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-link:hover .service {
+    transform: translateY(-5px);
+}
+
+/* ===== MOBILE VERSION ===== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: #f8f9fa;
+        padding: 1rem;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
 }

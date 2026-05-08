@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSIGHTS</title>
+    <title>INSIGHTS - Kaur Consulting</title>
     <link rel="stylesheet" href="web.css">
 </head>
-<body class="Insights">
-   <header>
-           <div class="header">
+<body>
+    <header>
+        <div class="header">
             <div class="logo-container">
                 <!-- Your logo image -->
                 <img src="kaur-logo.png" alt="Kaur Consulting Logo" class="logo"/>
@@ -32,15 +32,24 @@
             </ul>
         </nav>
     </header>
-        <main>
-            <section>
-                <h2>INSIGHTS</h2>
-            </section>
-        </main>
-        <footer>
-            <p>© 2025 Kaur Consulting</p>
-        </footer>
-    </body>
-    </html>
-    
-
+    <main>
+        <section>
+            <h2>INSIGHTS</h2>
+            <div class="subpages">
+                <article class="service">
+                    <h3><a href="industries.html">Industries</a></h3>
+                    <p>Explore the sectors we specialize in, from consumer goods to technology and finance.</p>
+                </article>
+                <article class="service">
+                    <h3><a href="capabilities.html">Capabilities</a></h3>
+                    <p>Discover the tools, methodologies, and expertise we use to deliver impactful insights.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Kaur Consulting. All rights reserved.</p>
+        <p style="font-size: 12px; margin-top: 10px;">Based in France | Serving clients worldwide</p>
+    </footer>
+</body>
+</html>

@@ -8,16 +8,6 @@
 </head>
 <body class="Business Cases">
    <header>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSIGHTS</title>
-    <link rel="stylesheet" href="web.css">
-</head>
-<body class="Insights">
-   <header>
            <div class="header">
             <div class="logo-container">
                 <!-- Your logo image -->
@@ -48,7 +38,8 @@
             </section>
         </main>
         <footer>
-            <p>© 2025 Kaur Consulting</p>
+            <p>© 2025 Kaur Consulting. All rights reserved.</p>
+        <p style="font-size: 12px; margin-top: 10px;">Based in France | Serving clients worldwide</p>
         </footer>
     </body>
     </html>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="web.css">
 </head>
 
-<body class="insights">
+<body class="Insights">
 
     <!-- HEADER -->
     <header>
@@ -57,7 +57,7 @@
 
                 <!-- Active Navigation -->
                 <li>
-                    <a href="insights.html" class="active">
+                    <a href="Insights.html" class="active">
                         INSIGHTS
                     </a>
                 </li>
@@ -83,25 +83,25 @@
     <main>
 
         <!-- INSIGHTS SECTION -->
-        <section class="insights-section">
+        <section class="Insights-section">
 
             <h1 class="page-title">
                 Insights
             </h1>
 
-            <p class="insights-intro">
+            <p class="Insights-intro">
                 Explore our latest perspectives on strategy,
                 innovation, digital transformation, and industry
                 trends shaping the future of business.
             </p>
 
             <!-- INSIGHTS GRID -->
-            <div class="insights-grid">
+            <div class="Insights-grid">
 
                 <!-- CARD 1 -->
-                <article class="insight-card">
+                <article class="Insights-card">
 
-                    <p class="insight-date">
+                    <p class="Insights-date">
                         May 2026
                     </p>
 
@@ -123,9 +123,9 @@
                 </article>
 
                 <!-- CARD 2 -->
-                <article class="insight-card">
+                <article class="Insights-card">
 
-                    <p class="insight-date">
+                    <p class="Insights-date">
                         April 2026
                     </p>
 

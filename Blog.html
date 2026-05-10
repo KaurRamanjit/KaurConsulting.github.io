@@ -3,49 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG</title>
+    <title>Blog | Kaur Consulting</title>
+
     <link rel="stylesheet" href="web.css">
 </head>
-<body class="Blog">
-   <header>
-           <div class="header">
+
+<body class="blog-page">
+
+    <!-- Header -->
+    <header>
+
+        <div class="header">
             <div class="logo-container">
-                <!-- Your logo image -->
-                <img src="kaur-logo.png" alt="Kaur Consulting Logo" class="logo"/>
-                <!-- Text next to logo -->
-                <span class="logo-text">Kaur Consulting</span>
+
+                <img src="kaur-logo.png"
+                     alt="Kaur Consulting Logo"
+                     class="logo">
+
+                <span class="logo-text">
+                    Kaur Consulting
+                </span>
+
             </div>
         </div>
+
+        <!-- Navigation -->
         <nav>
             <ul class="menu">
+
                 <li><a href="index.html">ABOUT</a></li>
-                        <li class="dropdown">
-            <a href="markets.html">MARKETS</a>
 
-            <ul class="dropdown-menu">
-                <li><a href="beauty-personal-care.html">Beauty & Personal Care</a></li>
-                <li><a href="household.html">Household</a></li>
-                <li><a href="fragrances.html">Fragrances</a></li>
-                <li><a href="packaging.html">Packaging</a></li>
-                <li><a href="retail.html">Retail</a></li>
-            </ul>
-        </li>
+                <li class="dropdown">
 
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="economy.html">ECONOMY</a></li>
-        <li><a href="business-cases.html">BUSINESS CASES</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+                    <a href="markets.html">MARKETS</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="beauty-personal-care.html">Beauty & Personal Care</a></li>
+                        <li><a href="household.html">Household</a></li>
+                        <li><a href="fragrances.html">Fragrances</a></li>
+                        <li><a href="packaging.html">Packaging</a></li>
+                        <li><a href="retail.html">Retail</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="blog.html" class="active">BLOG</a></li>
+
+                <li><a href="economy.html">ECONOMY</a></li>
+
+                <li><a href="business-cases.html">BUSINESS CASES</a></li>
+
+                <li><a href="contact.html">CONTACT</a></li>
+
             </ul>
         </nav>
+
     </header>
-        <main>
-            <section>
-                <h2>BLOG</h2>
-            </section>
-        </main>
-        <footer>
-            <p>© 2025 Kaur Consulting. All rights reserved.</p>
-        <p style="font-size: 12px; margin-top: 10px;">Based in France | Serving clients worldwide</p>
-        </footer>
-    </body>
-    </html>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="blog-header">
+            <h1>BLOG</h1>
+        </section>
+
+        <!-- Future blog posts go here -->
+        <section class="blog-posts">
+
+            <!-- Example article -->
+            <!--
+            <article class="blog-card">
+                <h2>Post Title</h2>
+                <p>Short preview text...</p>
+                <a href="#">Read More</a>
+            </article>
+            -->
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Kaur Consulting. All rights reserved.</p>
+
+        <p class="footer-location">
+            Based in France | Serving clients worldwide
+        </p>
+    </footer>
+
+</body>
+</html>
